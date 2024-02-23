@@ -55,7 +55,7 @@ body {
     color: var(--text-dark);
     box-sizing: border-box;
     padding: var(--spacing-sm) 0 0 0;
-    background-color: var(--bg-white);
+    background-color: darkgray;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -227,5 +227,7 @@ p {
 }
 
 .menu a {
-
+    color: var(--text-light);
+    font-weight: bold;
+    margin: 0 var(--spacing-md);
 }
