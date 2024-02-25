@@ -164,7 +164,7 @@ p {
 .two-column > .col-right {
     width: 50%;
     box-sizing: border-box;
-    padding: 0 var(--spacing-md) 0 0;
+    padding: 0 0 0 var(--spacing-md);
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -306,7 +306,7 @@ p {
 
 .hero-phone {
     height: 628px;
-    transform: translate(64px, -32px);
+    transform: translate(32px, -32px);
 }
 
 /* PARTNERS */
@@ -328,4 +328,27 @@ p {
 .partners-grid img {
     height: 60px;
     place-self: center;
+}
+
+/* UNIFIED PLATFORM */
+.unified-platform {
+    padding: var(--spacing-xl) 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--bg-light);
+}
+
+.unified-platform h2 {
+    width: 50%;
+    margin-bottom: var(--spacing-md);
+}
+
+.unified-platform .primary-button {
+    background-color: var(--purple-1);
+    margin: var(--spacing-md) 0;
+}
+
+.unified-platform .primary-button:hover {
+    background-color: var(--primary-accent);
 }
