@@ -55,7 +55,7 @@ body {
     color: var(--text-dark);
     box-sizing: border-box;
     padding: var(--spacing-sm) 0 0 0;
-    background-color: darkgray;
+    background-color: darkgray; /* Temp! */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -169,6 +169,27 @@ p {
     flex-direction: column;
     align-items: start;
     justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: var(--spacing-sm) var(--spacing-md) var(--spacing-sm) 0;
+}
+
+.card .icon {
+    height: 50px;
+    margin: 0 0 var(--spacing-sm) 0;
+}
+
+.card h3 {
+    font-family: var(--heading-font);
+    font-weight: 500;
+    font-size: var(--h6-size);
+    margin: 0;
+    width: 100%;
 }
 
 .subtitle, 
@@ -395,5 +416,47 @@ p {
     grid-area: dash;
     width: 100%;
     box-shadow: var(--standard-box-shadow);
+    border-radius: var(--standard-border-radius);
+}
+
+/* INTEGRATIONS */
+.integrations {
+    color: var(--text-light);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.integrations .primary-button {
+    background-color: var(--blue-1);
+    color: var(--primary-accent);
+    margin: var(--spacing-lg) 0 0 0;
+}
+
+.integrations .primary-button:hover {
+    background-color: var(--bg-white);
+}
+
+.integrations .secondary-button {
+    color: var(--blue-1);
+    padding-left: 0;
+}
+
+.integrations .card-container {
+    display: flex;
+    margin: var(--spacing-lg) 0;
+}
+
+.integrations .card-container .card {
+    width: 50%;
+}
+
+#api-code {
+    max-width: 470px;
+    margin: 0 0 var(--spacing-md) 0;
+    border-radius: var(--standard-border-radius);
+}
+#terminal-code {
+    max-width: 470px;
     border-radius: var(--standard-border-radius);
 }
