@@ -49,6 +49,11 @@
 }
 
 /* GENERAL STYLES*/
+html, body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     margin: 0;
     font-family: var(--body-font);
@@ -483,4 +488,47 @@ p {
 
 .why-swipe .secondary-text {
     color: var(--text-dark);
+}
+
+/* GLOBAL */
+.global {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: var(--text-light);
+    position: relative;
+    padding: calc(var(--spacing-xl) * 3) 0 0 0;
+}
+
+.global a {
+    color: var(--blue-1);
+}
+
+.global a:hover {
+    color: var(--text-light);
+}
+
+.global .card-container {
+    display: flex;
+    margin: calc(var(--spacing-xl) * 2) 0;
+}
+
+.global .card-container .card {
+    width: 25%;
+    box-sizing: border-box;
+    padding: 0 var(--spacing-sm) 0 0;
+    margin: 0 var(--spacing-md) 0 0;
+}
+
+.global .card-container .card h3 {
+    border-left: 2px solid var(--blue-1);
+    padding: 0 0 0 var(--spacing-sm);
+    line-height: 28px;
+}
+
+#globe {
+    max-width: 844px;
+    opacity: 25%;
+    position: absolute;
+    top: 10%;
 }
