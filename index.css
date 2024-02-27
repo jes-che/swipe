@@ -535,6 +535,7 @@ p {
 
 /* VIRTUAL EVENTS */
 .virtual-events {
+    width: 100%;
     display: flex;
     justify-content: center;
     padding: calc(var(--spacing-xl) * 2) 0;
@@ -618,4 +619,41 @@ p {
     color: var(--text-dark);
     font-weight: 700;
     width: 50%;
+}
+
+/* GETTING STARTED */
+.getting-started {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: var(--spacing-xl) 0;
+}
+
+.getting-started .primary-button {
+    background-color: var(--purple-1);
+    margin: var(--spacing-md) 0;
+}
+
+.getting-started .primary-button:hover {
+    background-color: var(--primary-accent);
+}
+
+.getting-started .col-left {
+    padding: 0 var(--spacing-xl) 0 0;
+}
+
+.getting-started .col-right {
+    flex-direction: row;
+}
+
+.getting-started .col-right .card {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 0 var(--spacing-sm) 0 0;
+    margin: 0 var(--spacing-md) 0 0;
+}
+
+.getting-started .col-right .card .secondary-button {
+    color: var(--purple-2);
+    padding-left: 0;
 }
