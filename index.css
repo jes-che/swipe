@@ -51,6 +51,7 @@
 /* GENERAL STYLES*/
 html, body {
     width: 100%;
+    position: relative;
     overflow-x: hidden;
 }
 
@@ -785,6 +786,11 @@ p {
     .section-container {
         padding: 0 var(--spacing-md);
     }
+
+    /* PARTNERS */
+    .partners-grid {
+        margin: 0 0 var(--spacing-xl) 0;;
+    }
 }
 
 /* CUSTOM BREAKPOINT (850px) */
@@ -832,6 +838,45 @@ p {
     .integrations .card-container .card {
         width: 100%;
     }
+
+    /* WHY SWIPE */
+    .why-swipe {
+        padding: var(--spacing-md) 0 var(--spacing-xl) 0;
+    }
+
+    .why-swipe .card-container {
+        flex-wrap: wrap;
+    }
+
+    .why-swipe .card-container .card {
+        width: 50%;
+        margin: var(--spacing-md) 0;
+    }
+
+    /* GLOBAL */
+    .global .card-container {
+        flex-wrap: wrap;
+        margin: var(--spacing-xl) 0;
+    }
+
+    .global .card-container .card {
+        width: 50%;
+        margin: var(--spacing-md) 0;
+    }
+
+    /* GETTING STARTED */
+    .getting-started .two-column {
+        align-items: center;
+    }
+
+    .getting-started .col-right {
+        flex-wrap: wrap;
+    }
+
+    .getting-started .col-right .card {
+        width: 100%;
+        margin: var(--spacing-md) 0;
+    }
 }
 
 /* MOBILE SIZE */
@@ -872,5 +917,64 @@ p {
 
     .integrations .col-right {
         display: none;
+    }
+
+    /* WHY SWIPE */
+    .why-swipe {
+        padding: var(--spacing-xl) 0 var(--spacing-md) 0;
+    }
+
+    .why-swipe .card-container .card {
+        width: 100%;
+        margin: var(--spacing-sm) 0;
+    }
+
+    .why-swipe .card-container .card .icon {
+        height: 40px;
+    }
+
+    /* GLOBAL */
+    .global {
+        padding: var(--spacing-xl) 0 0 0;
+    }
+
+    .global .card-container {
+        margin: var(--spacing-md) 0;
+    }
+
+    .global .card-container .card {
+        width: 100%;
+        margin: var(--spacing-sm) 0;
+    }
+
+    #globe {
+        opacity: 10%;
+    }
+
+    /* VIRTUAL EVENTS */
+    .virtual-events {
+        padding: 0;
+    }
+
+    .virtual-events .swipe-sessions-card {
+        margin: var(--spacing-md) 0;
+        width: 100%;
+    }
+
+    .virtual-events .swipe-sessions-card .secondary-text {
+        width: 100%;
+    }
+
+    .virtual-events .swipe-sessions-card .card-top {
+        height: 40%;
+    }
+
+    #sessions-logo {
+        width: 300px;
+    }
+
+    /* GETTING STARTED */
+    .getting-started {
+        padding: var(--spacing-md) 0;
     }
 }
