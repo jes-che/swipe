@@ -319,7 +319,7 @@ p {
     justify-content: center;
     align-items: center;
     position: fixed;
-    z-index: 1;
+    z-index: 3;
     top: 0;
     right: -160px;
     padding: 16px;
@@ -889,7 +889,8 @@ p {
     /* NAVBAR */
     .navbar {
         margin: var(--spacing-sm) 0 var(--spacing-lg) 0;
-        z-index: 2;
+        z-index: 4;
+        position: relative;
     }
 
     .navbar .menu {
@@ -909,6 +910,8 @@ p {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        position: fixed;
+        right: 16px;
     }
 
     .hamburger:hover {
