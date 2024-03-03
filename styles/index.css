@@ -922,12 +922,6 @@ p {
         margin: 1px 0;
     }
 
-    .navbar .hamburger {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
     .mobileNav {
         display: flex;
     }
