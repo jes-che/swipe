@@ -889,7 +889,6 @@ p {
     /* NAVBAR */
     .navbar {
         margin: var(--spacing-sm) 0 var(--spacing-lg) 0;
-        z-index: 4;
         position: relative;
     }
 
@@ -911,6 +910,7 @@ p {
         justify-content: center;
         align-items: center;
         position: fixed;
+        z-index: 4;
         right: 16px;
     }
 
